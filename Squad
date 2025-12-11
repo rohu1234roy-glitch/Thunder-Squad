@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Conservation | Thunder Squad</title>
+    <style>
+        :root {
+            --primary-blue: #0288d1;
+            --light-blue: #e1f5fe;
+            --dark-blue: #01579b;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 { margin: 0; font-size: 1.5rem; }
+        nav ul { list-style: none; display: flex; gap: 20px; padding: 0; }
+        nav a { color: var(--white); text-decoration: none; font-weight: bold; }
+
+        /* Hero Section - Based on Page 3 Visual Idea */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&q=80'); 
+            [cite_start]/* Placeholder for "One perfect drop hitting still water" [cite: 12] */
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 20px;
+        }
+
+        header h2 { font-size: 3rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        header p { font-size: 1.5rem; font-weight: 300; }
+        
+        /* Team Section */
+        .team-banner {
+            background-color: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* General Sections */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h3 { color: var(--dark-blue); font-size: 2rem; margin-bottom: 1rem; text-align: center; }
+        
+        /* Stats Grid - Based on Page 6 & 9 */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            background: var(--light-blue);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .stat-card h4 { color: var(--primary-blue); font-size: 1.5rem; margin: 0; }
+
+        /* Action Steps - Based on Page 11 */
+        .tips-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .tip-box {
+            border: 2px solid var(--primary-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .tip-box:hover { transform: translateY(-5px); background-color: var(--light-blue); }
+
+        /* Conclusion - Based on Page 18 */
+        .conclusion {
+            background-color: var(--light-blue);
+            text-align: center;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            color: var(--dark-blue);
+        }
+
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Visual placeholder styling */
+        .visual-desc {
+            font-size: 0.8rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>Thunder Squad ⚡</h1>
+        <ul>
+            <li><a href="#about">The Crisis</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#team">Team</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Water Conservation: Every Drop Counts</h2>
+        <p>Securing Our Future, One Drop at a Time</p>
+    </header>
+
+    <div class="team-banner" id="team">
+        <p><strong>Presented by Thunder Squad:</strong> Rohan Roy (Presenter) • Rudra Raj Singh • Sidharth Gupta • Dev Tiwari • Abhishek Chaubey</p>
+    </div>
+
+    <section id="about">
+        <h3>The Global Water Crisis</h3>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+            Water is life—essential for health, agriculture, and industry. [cite_start]Yet, despite appearances, freshwater is scarce and under threat globally[cite: 20, 34].
+        </p>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h4>&lt; 1%</h4>
+                [cite_start]<p>Of Earth's water is easily accessible freshwater[cite: 47].</p>
+            </div>
+            <div class="stat-card">
+                <h4>Threats</h4>
+                [cite_start]<p>Droughts, Pollution, and Overconsumption are rising[cite: 37].</p>
+            </div>
+            <div class="stat-card">
+                <h4>Impact</h4>
+                [cite_start]<p>Water scarcity affects biodiversity and our economic future[cite: 102].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="usage" style="background-color: #fafafa;">
+        <h3>Where Does Our Water Go?</h3>
+        <p style="text-align: center;">Understanding consumption is the first step to conservation.</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h4>Agriculture</h4>
+                [cite_start]<p>The largest global consumer of water[cite: 52].</p>
+            </div>
+            <div class="stat-card" style="border: 2px solid var(--primary-blue);">
+                <h4>Domestic Breakdown</h4>
+                [cite_start]<p><strong>70%</strong> of indoor use happens in the bathroom (Toilet flushing, Showers)[cite: 60, 61].</p>
+            </div>
+            <div class="stat-card">
+                <h4>Industry</h4>
+                [cite_start]<p>Significant usage in manufacturing and processing[cite: 62].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips">
+        <h3>Simple Steps for Home & Garden</h3>
+        <p style="text-align: center; margin-bottom: 2rem;">Small changes create a big impact. Start today.</p>
+        
+        <div class="tips-container">
+            <div class="tip-box">
+                <h4>🚿 Shorter Showers</h4>
+                [cite_start]<p>Take 5-minute showers instead of 10 to save massive amounts of water[cite: 122].</p>
+            </div>
+            <div class="tip-box">
+                <h4>🔧 Fix Leaks</h4>
+                <p>Check faucets and toilets. [cite_start]A dripping tap wastes more than you think[cite: 76].</p>
+            </div>
+            <div class="tip-box">
+                <h4>🧺 Full Loads</h4>
+                [cite_start]<p>Only run washing machines and dishwashers when they are full[cite: 78].</p>
+            </div>
+            <div class="tip-box">
+                <h4>🌻 Smart Gardening</h4>
+                [cite_start]<p>Water in the morning or evening and use drip irrigation[cite: 80, 81].</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="conclusion">
+        <h3>Our Shared Responsibility</h3>
+        <div class="quote">
+            [cite_start]"Water is the most precious resource on Earth... We must treat every drop like the treasure it is." [cite: 118, 119]
+        </div>
+        <div style="background: white; padding: 20px; border-radius: 10px; display: inline-block;">
+             <p><strong>Visual Idea:</strong> A powerful image of many hands coming together to protect a single drop.</p>
+            <p><em>Together, we protect our most precious resource.</em></p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Thank You!</h2>
+        <p>Created by <strong>Thunder Squad</strong></p>
+        <p><small>© 2024 Water Conservation Project</small></p>
+    </footer>
+
+</body>
+</html>
